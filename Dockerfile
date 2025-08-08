@@ -4,12 +4,11 @@ FROM tomcat:9-jdk17
 RUN rm -rf /usr/local/tomcat/webapps/ROOT
 
 # Copy WAR file to Tomcat
-COPY BloodDonation.war /usr/local/tomcat/webapps/BloodDonation.war
+COPY BloodDonation.war /usr/local/tomcat/webapps/ROOT.war
 
-# Expose default Tomcat port
-EXPOSE 8080
+# Copy the start script and give execution permissions
+COPY start.sh /start.sh
+RUN chmod +x /start.sh
 
-COPY start.sh /app/start.sh
-RUN chmod +x /app/start.sh
-CMD ["/app/start.sh"]
+CMD ["/start.sh"]
 
