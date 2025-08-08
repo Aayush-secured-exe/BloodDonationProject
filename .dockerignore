@@ -1,11 +1,5 @@
-**/*.md
-**/*.log
-**/*.zip
-**/*.tar
-**/*.gz
-target/
 .git
+.github
 .gitignore
-*.iml
-.idea/
-*.swp
+Dockerfile
+README.md
