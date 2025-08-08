@@ -1,0 +1,11 @@
+**/*.md
+**/*.log
+**/*.zip
+**/*.tar
+**/*.gz
+target/
+.git
+.gitignore
+*.iml
+.idea/
+*.swp
