@@ -1,4 +1,4 @@
-FROM tomcat:9-jdk17
+FROM tomcat:9-jdk23
 
 # Remove default ROOT app
 RUN rm -rf /usr/local/tomcat/webapps/ROOT
